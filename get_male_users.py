@@ -9,7 +9,7 @@ def get_male_users(data:dict)->list:
     l = []
     for i in data['users']:
         if i['gender']=='male':
-            l.append(i['name'])
+            l.append(i)
             
     return l
 data = read_json("users.json")
