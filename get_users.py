@@ -9,7 +9,10 @@ def get_users(data:dict)->list:
         list: A list of users
     """
     # Get the list of users
-    pass
+    l = []
+    for i in data['users']:
+        l.append(i['name'])
+    return l
 
 
 data = read_json("users.json")
