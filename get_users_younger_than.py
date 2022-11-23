@@ -6,4 +6,8 @@ def get_users_younger_than(data:dict, age:int)->list:
     Returns:
         list: A list of users
     """
+    l = []
+    for i in data['users']:
+        if i['age']< age:
+            l.append(i)
     pass
