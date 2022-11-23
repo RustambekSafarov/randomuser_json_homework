@@ -11,8 +11,9 @@ def get_users(data:dict)->list:
     # Get the list of users
     l = []
     for i in data['users']:
-        l.append(i['name'])
+        l.append(i)
     return l
 
 
 data = read_json("users.json")
+print(get_users(data))
